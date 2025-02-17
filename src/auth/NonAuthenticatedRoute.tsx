@@ -14,7 +14,7 @@ const NotAuthenticatedRoute: React.FC<IRouteProps> = ({ children }) => {
   }
 
   if (isLoggedIn) {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to="/orders" replace />;
   }
 
   return children;

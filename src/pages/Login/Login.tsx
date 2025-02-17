@@ -38,7 +38,7 @@ const Login = () => {
         notification.success({
           message: LOGIN_SUCCESS,
         });
-        navigate("/dashboard");
+        navigate("/orders");
       })
       .catch((err: AxiosError) => handleFormError(form, err))
       .finally(() => {

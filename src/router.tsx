@@ -3,6 +3,7 @@ import RootLayout from "./layouts/RootLayout/RootLayout";
 import LoginPage from "./pages/Login/LoginPage";
 import RegisterPage from "./pages/Register/RegisterPage";
 import Tables from "./pages/Tables";
+import Orders from "./pages/Orders";
 
 const routes = [
   {
@@ -19,10 +20,11 @@ const routes = [
     children: [
       {
         path: "/",
-        element: <Navigate to="/dashboard" replace />,
+        element: <Navigate to="/orders" replace />,
       },
       {
         path: "/orders",
+        element: <Orders />,
       },
       {
         path: "/orders-history",
